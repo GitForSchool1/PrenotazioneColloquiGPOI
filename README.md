@@ -3,7 +3,7 @@ Progetto di GPOI con prenotazione dei colloqui
 To Do:
 - [ ] Feature
 - [ ] Casi d'uso
-- [ ] Diagrammi UML
+- [x] Diagrammi UML
 - [ ] Diagrammi entità relazione
 - [ ] Users Stories
 - [ ] Analisi generale

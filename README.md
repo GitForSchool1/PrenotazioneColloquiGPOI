@@ -4,6 +4,6 @@ To Do:
 - [ ] Feature (Fabio)
 - [ ] Casi d'uso
 - [x] Diagrammi UML
-- [ ] Diagrammi entità relazione
+- [ ] Schema entità relazione (Manassero)
 - [ ] Users Stories (Fabio)
-- [ ] Analisi generale
+- [ ] Analisi generale (Manassero)

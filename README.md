@@ -1,9 +1,9 @@
 # Prenotazione Colloqui GPOI
 Progetto di GPOI con prenotazione dei colloqui
 To Do:
-- [ ] Feature
+- [ ] Feature (Fabio)
 - [ ] Casi d'uso
 - [x] Diagrammi UML
 - [ ] Diagrammi entità relazione
-- [ ] Users Stories
+- [ ] Users Stories (Fabio)
 - [ ] Analisi generale

@@ -4,8 +4,8 @@ To Do:
 - [ ] Feature (Simone)
 - [ ] Schema entità relazione (Manassero)
 - [ ] Users Stories (Fabio)
-- [ ] Analisi generale (Manassero)
 
 Finished:
+- [x] Analisi generale (Manassero)
 - [x] Casi d'uso (Kevin)
-- [x] Diagrammi UML
+- [x] Diagrammi UML (Manassero)

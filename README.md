@@ -1,9 +1,9 @@
 # Prenotazione Colloqui GPOI
 Progetto di GPOI con prenotazione dei colloqui
 To Do:
-- [ ] Users Stories (Fabio)
 
 Finished:
+- [x] Users Stories (Fabio)
 - [x] Schema entità relazione (Manassero)
 - [x] Feature (Simone)
 - [x] Analisi generale (Manassero)

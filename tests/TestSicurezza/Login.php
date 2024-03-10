@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <?php
+<<<<<<< HEAD
         include_once "Sicurezza.php";
         if($_SERVER['REQUEST_METHOD'] == "POST"){
             if(isset($_POST['btnInvia'])){
@@ -31,6 +32,10 @@
                     }
                 }
             }
+=======
+        if($_SERVER['REQUEST_METHOD'] == "POST"){
+            
+>>>>>>> 5b2968d5a78d7d9e4369b4262f89a20b8bdcc07e
         }
 
     ?>
@@ -51,7 +56,11 @@
         <label >Email: </label>
         <input type="text" name="txtEmail">
         <br>
+<<<<<<< HEAD
         <input type="submit" name="btnInvia" id="btnInvia" value="Invia">
+=======
+        <input type="submit" value="Invia">
+>>>>>>> 5b2968d5a78d7d9e4369b4262f89a20b8bdcc07e
     </form>
 </body>
 </html>

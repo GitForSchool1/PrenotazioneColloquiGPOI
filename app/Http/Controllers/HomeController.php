@@ -12,10 +12,10 @@
         
         public function about(){
             $viewData = [];
-            $viewData['title'] = "Impara Sui Franchi";
-            $viewData['subtitle'] = "IMPARA";
-            $viewData['description'] = "I franchi sono il male assoluto, distruttori di mondi";
-            $viewData['author'] = "Puzzo Fabio";
+            $viewData['title'] = "ABOUT";
+            $viewData['subtitle'] = "Progetto di GPOI per la gestione dei colloqui";
+            $viewData['description'] = "Quest'app è stata sviluppata da 6 studenti dell'itis";
+            $viewData['author'] = "Puzzo, Tunaru, Pallara, Manassero, Stanciu, Mullace";
             return view('home.about')->with('viewData',$viewData);
         }
     }

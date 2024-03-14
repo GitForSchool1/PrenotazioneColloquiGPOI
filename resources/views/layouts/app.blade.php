@@ -22,6 +22,16 @@
           <a class="nav-link active" href="{{route('home.about')}}">About</a>
           <a class="nav-link active" href="{{route('products.index')}}">Login</a>
           
+          @guest
+          <a class="nav-link active" href="{{route('login')}}">Login</a>
+          <a class="nav-link active" href="{{route('register')}}">Register</a>
+          @else
+            <form method="POST" id="logout" action='{{route('logout')}}'>
+              <a class="nav-link active" role="button" onclick="Ddocumenti.getElementById('logout').submit">Logout</a>
+              @csrf
+            </form>
+          @endguest
+
         </div>
       </div>
     </div>

@@ -28,3 +28,7 @@ Route::post('/admin/products/store','App\Http\Controllers\AdminProductController
 Route::delete('/admin/products/{id}/delete','App\Http\Controllers\AdminProductController@delete')->name('admin.products.delete');
 
 Route::get('/admin/products/{id}/edit','App\Http\Controllers\AdminProductController@edit')->name('admin.products.edit');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

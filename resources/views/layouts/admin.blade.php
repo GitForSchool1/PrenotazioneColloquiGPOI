@@ -24,6 +24,7 @@
         <li>
           <a href={{route('home.index')}} class="mt-2 btn bg-primary text-white">Go back to the home page</a>
         </li>
+       
       </ul>
     </div>
     <!-- sidebar -->

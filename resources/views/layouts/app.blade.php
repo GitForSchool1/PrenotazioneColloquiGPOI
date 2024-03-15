@@ -19,6 +19,21 @@
         <div class="navbar-nav ms-auto">
           <a class="nav-link active" href="{{route('home.index')}}">Home</a>
           <a class="nav-link active" href="{{route('home.about')}}">About</a>
+<<<<<<< HEAD
+          <a class="nav-link active" href="{{route('products.index')}}">Login</a>
+          
+          @guest
+          <a class="nav-link active" href="{{route('login')}}">Login</a>
+          <a class="nav-link active" href="{{route('register')}}">Register</a>
+          @else
+            <form method="POST" id="logout" action='{{route('logout')}}'>
+              <a class="nav-link active" role="button" onclick="Ddocumenti.getElementById('logout').submit">Logout</a>
+              @csrf
+            </form>
+          @endguest
+
+=======
+>>>>>>> 0cd64872882fd44e715c0adce25ed78901c8cb60
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@
     class HomeController extends Controller{
         public function index() {
             $viewData = [];
-            $viewData['title'] = "Progetto GPOI";
+            $viewData['title'] = "Prenotazione Colloqui";
             return view('home.index')->with('viewData',$viewData);
         }
         

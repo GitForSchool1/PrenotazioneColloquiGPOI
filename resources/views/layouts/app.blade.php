@@ -37,7 +37,7 @@
 
   <header class="masthead bg-primary text-white text-center py-4">
     <div class="container d-flex align-items-center flex-column">
-      <h2>@yield('subtitle', 'Prenotazione Colloqui')</h2>
+      <h2>@yield('subtitle', 'Benvenuto nella pagina per la prenotazione dei colloqui')</h2>
     </div>
   </header>
   <!-- header -->

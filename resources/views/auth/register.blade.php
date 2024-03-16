@@ -60,6 +60,12 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+                        <div class="row mb-3">
+                            <label for="birthDay" class="col-md-4 col-form-label text-md-end">Birth Day</label>
+                            <div class="col-md-6">
+                                <input wire:model.lazy="birthday" name="birthday" type="date" required class="" placeholder="yyyy-mm-dd" pattern="\d{4}-\d{2}-\d{2}" title="Provide a date in the format yyyy-mm-dd">
+                            </div>
+                        </div>
 
                         <div class="row mb-0">
                             <div class="col-md-6 offset-md-4">

@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Archivio extends Models
+class Archivio extends Model
 {
     /***
      * $this->attributes['id'] - int 

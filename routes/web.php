@@ -21,13 +21,13 @@ Route::get('/products/{id}','App\Http\Controllers\ProductsController@show')->nam
 
 Route::get('/admin','App\Http\Controllers\AdminController@index')->name("admin.home.index");
 
-Route::get('/admin/products','App\Http\Controllers\AdminProductController@index')->name("admin.home.index");
+Route::get('/admin/archivio','App\Http\Controllers\AdminArchivioController@index')->name("admin.home.index");
 
-Route::post('/admin/products/store','App\Http\Controllers\AdminProductController@store')->name('admin.products.store');
+Route::post('/admin/archivio/store','App\Http\Controllers\AdminArchivioController@store')->name('admin.archivio.store');
 
-Route::delete('/admin/products/{id}/delete','App\Http\Controllers\AdminProductController@delete')->name('admin.products.delete');
+Route::delete('/admin/archivio/{id}/delete','App\Http\Controllers\AdminArchivioController@delete')->name('admin.archivio.delete');
 
-Route::get('/admin/products/{id}/edit','App\Http\Controllers\AdminProductController@edit')->name('admin.products.edit');
+Route::get('/admin/archivio/{id}/edit','App\Http\Controllers\AdminArchivioController@edit')->name('admin.archivio.edit');
 
 Auth::routes();
 

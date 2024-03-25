@@ -13,12 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('archivio', function (Blueprint $table) {
+        Schema::create('archivi', function (Blueprint $table) {
             $table->id();
             $table->string("nome");
             $table->string("cognome");
             $table->string("tipo");
             $table->string("documento");
+            $table->string("email");
         });
     }
 
@@ -29,7 +30,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('archivio');
+        Schema::dropIfExists('archivi');
     }
 
 

@@ -13,13 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('archivios', function (Blueprint $table) {
+        Schema::create('allert', function (Blueprint $table) {
             $table->id();
-            $table->string("nome");
-            $table->string("cognome");
-            $table->string("tipo");
-            $table->string("documento");
-            $table->string("email");
+            $table->timestamps();
         });
     }
 
@@ -30,8 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('archivi');
+        Schema::dropIfExists('allert');
     }
-
-
 };

@@ -9,17 +9,6 @@
 
     class AdminArchivioController extends Controller
     {
-       /* private function validateImage(Request $request,Archivio $Archivio){
-            if($request->hasFile('image')){
-                $imageName = $Archivio->getName().".".$Archivio->file('image')->extension();
-                Storage::disk('public')->put(
-                    $imageName,
-                    file_get_contents($request->file('image')->getRealPath())
-                );
-                $Archivio->setImage($imageName);
-                $Archivio->save();
-            }
-        }*/
 
         private function formValidate(Request $request){
             $request->validate([

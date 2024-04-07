@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,4 +36,43 @@
   </form>
   <script src="script.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Email</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <form action="/send_email" method="post">
+    <div>
+      <label for="to">To:</label>
+      <input type="email" id="to" name="to" required>
+    </div>
+    <div>
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+    </div>
+    <div>
+      <label for="body">Message:</label>
+      <textarea id="body" name="body" rows="10" cols="50" required></textarea>
+    </div>
+    <div>
+      <label for="attachments">Attachments:</label>
+      <input type="file" id="attachments" name="attachments" multiple>
+    </div>
+    <div>
+      <label for="cc">CC:</label>
+      <input type="email" id="cc" name="cc">
+    </div>
+    <div>
+      <label for="bcc">BCC:</label>
+      <input type="email" id="bcc" name="bcc">
+    </div>
+    <button type="submit">Send</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+>>>>>>> ed8441dcfaf4fd1c8e7e75b1a7f3d03f14b4a83f
 </html>

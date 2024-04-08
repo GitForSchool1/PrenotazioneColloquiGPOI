@@ -20,16 +20,18 @@
           <a class="nav-link active" href="{{route('home.index')}}">Home</a>
           <a class="nav-link active" href="{{route('home.about')}}">About</a>
           
-          @guest
-          <a class="nav-link active" href="{{route('login')}}">Login</a>
-          <a class="nav-link active" href="{{route('register')}}">Register</a>
-          @else
-            <form method="POST" id="logout" action='{{route('logout')}}'>
-              <a class="nav-link active" role="button" onclick="Ddocumenti.getElementById('logout').submit">Logout</a>
-              @csrf
-            </form>
-          @endguest
-
+            @guest
+            <a class="nav-link active" href="{{route('login')}}">Login</a>
+            <a class="nav-link active" href="{{route('register')}}">Register</a>
+            @else
+              <form method="POST" id="logout" action='{{route('logout')}}'>
+                <a class="nav-link active" role="button" onclick="Ddocumenti.getElementById('logout').submit">Logout</a>
+                @csrf
+              </form>
+            @endguest
+            @if(Auth::user() && Auth::user()->getRole() == 'admin')
+              <a class="nav-link active" href="{{route('admin.home.index')}}">Admin Panel</a>
+            @endif
         </div>
       </div>
     </div>

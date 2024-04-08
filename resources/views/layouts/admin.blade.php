@@ -20,18 +20,17 @@
       <hr />
       <ul class="nav flex-column">
         <li><a href={{route('admin.home.index')}} class="nav-link text-white">- Admin - Home</a></li>
-        <li><a href={{route('admin.archivio.index')}} class="nav-link text-white">- Admin - Archivio</a></li>
+        <li><a href={{route('admin.report.show')}} class="nav-link text-white">- Admin - Report</a></li>
         <li>
           <a href={{route('home.index')}} class="mt-2 btn bg-primary text-white">Go back to the home page</a>
         </li>
-       
       </ul>
     </div>
     <!-- sidebar -->
     <div class="col content-grey">
       <nav class="p-3 shadow text-end">
         <span class="profile-font">Admin</span>
-        <img class="img-profile rounded-circle" src={{asset('storage/user.png')}}>
+        <img class="img-profile rounded-circle" src={{asset('storage/admin.png')}}>
       </nav>
 
       <div class="g-0 m-5">

@@ -9,7 +9,6 @@
         public function index() {
             $viewData = [];
             $viewData['title'] = 'Lista archivi';
-           // $viewData['subtitle'] = 'Scegli i nostri piatti';
             $viewData['archivi'] = Archivio::all();
 
             return view('archivio.index')->with('viewData',$viewData);

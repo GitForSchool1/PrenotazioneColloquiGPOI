@@ -37,9 +37,7 @@
 
             
             $newArchivio->save();
-           /* if($request->hasFile('image')){
-                $this->validateImage($request,$newArchivio);
-            }*/
+
             return back();
         }
         
@@ -48,13 +46,9 @@
             return back();
         }
 
-        public function edit($id){
+        public function show(){
             $viewData = [];
-            $archivio = Archivio::findOrFail($id);
-            $viewData['title'] = "Modifica Archivio - ".$archivio->getName();
-            $viewData['archivio'] = $archivio;
-
-            return view('admin.archivio.edit')->with('viewData',$viewData);
+            return view('admin.report.show')->with('viewData',$viewData);
         }
 
         public function update(Request $request, int $id){

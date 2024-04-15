@@ -14,7 +14,7 @@
   <div class="row g-0">
     <!-- sidebar -->
     <div class="p-3 col fixed text-white bg-dark">
-      <a href=# class="text-white text-decoration-none">
+      <a href={{route('admin.home.index')}} class="text-white text-decoration-none">
         <span class="fs-4">Admin Panel</span>
       </a>
       <hr />

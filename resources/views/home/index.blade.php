@@ -10,6 +10,7 @@
         <form method="post">
             <a href="{{route("login")}}" class="nav-link">Hai già un account</a>
             <a href="{{route("register")}}" class="nav-link">Crea un nuovo account</a>
+            
         </form>
     </div>
 

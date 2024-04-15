@@ -92,7 +92,7 @@
 
     <div class="card">
         <div class="card-header">
-            Gestione Franchi
+            Gestione 
         </div>
         <div class="card-body">
             <table class="table table-bordered table-striped">

@@ -21,6 +21,7 @@ Route::get('/admin','App\Http\Controllers\AdminController@index')->name("admin.h
 
 Route::get('/admin/archivio','App\Http\Controllers\AdminArchivioController@index')->name("admin.home.index");
 Route::get('/admin/archivio','App\Http\Controllers\AdminArchivioController@index')->name("admin.archivio.index");
+//Route::get('/admin/report','App\Http\Controllers\AdminReportController@index')->name("admin.report.index");
 
 
 Route::post('/admin/archivio/store','App\Http\Controllers\AdminArchivioController@store')->name('admin.archivio.store');
@@ -32,3 +33,4 @@ Route::get('/admin/archivio/{id}/edit','App\Http\Controllers\AdminArchivioContro
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/report', 'App\Http\Controllers\ReportController@index')->name('report.index');

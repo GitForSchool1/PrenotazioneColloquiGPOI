@@ -49,7 +49,7 @@ class User extends Authenticatable
     public function getEmail(){ return $this->attributes['email']; }
     public function getEmailVerifiedAt(){ return $this->attributes['email_verified_at']; }
     public function getPassword(){ return $this->attributes['password']; }
-    public function getRememberToken(){ return $this->attributes['remeber_token']; }
+    public function getRememberToken(){ return $this->attributes['remember_token']; }
     public function getCreatedAt(){ return $this->attributes['createdAt']; }
     public function getBirthday(){ return $this->attributes['birthday']; }
     public function getRole(){ return $this->attributes['role']; }

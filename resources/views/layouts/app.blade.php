@@ -19,19 +19,6 @@
         <div class="navbar-nav ms-auto">
           <a class="nav-link active" href="{{route('home.index')}}">Home</a>
           <a class="nav-link active" href="{{route('home.about')}}">About</a>
-<<<<<<< HEAD
-          <a class="nav-link active" href="{{route('report.index')}}">Report</a>
-          @guest
-          <a class="nav-link active" href="{{route('login')}}">Login</a>
-          <a class="nav-link active" href="{{route('register')}}">Register</a>
-          @else
-            <form method="POST" id="logout" action='{{route('logout')}}'>
-              <a class="nav-link active" role="button" onclick="Ddocumenti.getElementById('logout').submit">Logout</a>
-              @csrf
-            </form>
-          @endguest
-
-=======
           
             @guest
             <a class="nav-link active" href="{{route('login')}}">Login</a>
@@ -45,7 +32,6 @@
             @if(Auth::user() && Auth::user()->getRole() == 'admin')
               <a class="nav-link active" href="{{route('admin.home.index')}}">Admin Panel</a>
             @endif
->>>>>>> 60ee3e2d6ae6e01bfceb16ec7f87e3123ed3c0dd
         </div>
       </div>
     </div>

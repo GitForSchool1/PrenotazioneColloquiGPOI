@@ -21,11 +21,12 @@
       <ul class="nav flex-column">
         <li><a href={{route('admin.home.index')}} class="nav-link text-white">- Admin - Home</a></li>
 <<<<<<< HEAD
-        <li><a href={{route('admin.archivio.index')}} class="nav-link text-white">- Admin - Archivio</a></li>
+        <li><a href={{route('admin.archivio.store')}} class="nav-link text-white">- Admin - Archivio</a></li>
+        <li><a href="{{route('admin.report.show')}}" class="nav-link text-white">- Admin - Report</a></li>
         
 =======
         <li><a href={{route('admin.report.show')}} class="nav-link text-white">- Admin - Report</a></li>
->>>>>>> 60ee3e2d6ae6e01bfceb16ec7f87e3123ed3c0dd
+>>>>>>> daaf4248a8822398b74aed852c0335bc28503f5b
         <li>
           <a href={{route('home.index')}} class="mt-2 btn bg-primary text-white">Go back to the home page</a>
         </li>

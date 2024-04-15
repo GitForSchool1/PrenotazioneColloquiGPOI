@@ -4,7 +4,7 @@
     use Illuminate\Http\Request;
     use App\Models\Archivio;
     
-    class ReportController extends Controller{
+    class AdminReportController extends Controller{
         public function index()
 
         {

@@ -17,21 +17,9 @@ Route::get('/','App\Http\Controllers\HomeController@index')->name("home.index");
 Route::get('/about','App\Http\Controllers\HomeController@about')->name("home.about");
 //END HOME ROUTE
 
-<<<<<<< HEAD
-
-
-Route::get('/admin','App\Http\Controllers\AdminController@index')->name("admin.home.index");
-
-Route::get('/admin/archivio','App\Http\Controllers\AdminArchivioController@index')->name("admin.home.index");
-Route::get('/admin/archivio','App\Http\Controllers\AdminArchivioController@index')->name("admin.archivio.index");
-//Route::get('/admin/report','App\Http\Controllers\AdminReportController@index')->name("admin.report.index");
-
-
-=======
 //ADMIN ROUTE
 Route::get('/admin','App\Http\Controllers\AdminController@index')->name("admin.home.index"); //Funziona
 Route::get('/admin/report','App\Http\Controllers\AdminController@show')->name('admin.report.show');
->>>>>>> 60ee3e2d6ae6e01bfceb16ec7f87e3123ed3c0dd
 Route::post('/admin/archivio/store','App\Http\Controllers\AdminArchivioController@store')->name('admin.archivio.store');
 Route::delete('/admin/archivio/{id}/delete','App\Http\Controllers\AdminArchivioController@delete')->name('admin.archivio.delete');
 //END ADMIN ROUTE

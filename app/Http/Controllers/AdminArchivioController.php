@@ -28,17 +28,7 @@
 
         public function store(Request $request){
             $this->formValidate($request);
-            $newArchivio = new Archivio();
-            $newArchivio->setName($request->input('name'));
-            $newArchivio->setSurname($request->input('surname'));
-            $newArchivio->setDocuments($request->input('document'));
-            $newArchivio->setType($request->input('type'));
-            $newArchivio->setEmail($request->input('email'));
-
-            
-            $newArchivio->save();
-
-            return back();
+            return view('admin.archivio.store');
         }
         
         public function delete($id){
@@ -63,7 +53,7 @@
             
             $oldArchivio->save();
             
-            return redirect()->route('admin.archivio.index');
+            return back();
         }
     
     }

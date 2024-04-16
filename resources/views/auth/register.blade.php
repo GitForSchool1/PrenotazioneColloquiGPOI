@@ -6,6 +6,9 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Register') }}</div>
+                <div class="text-center">
+                    <img src="{{ asset("storage/prima.jpg")}}" class="img-fluid" alt="200">
+                  </div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">

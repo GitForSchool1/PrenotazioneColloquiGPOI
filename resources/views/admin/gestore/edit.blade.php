@@ -2,7 +2,9 @@
 @section('title',$viewData['title'])
 @section('subtitle',$viewData['subtitle'])
 @section('content')
-<form action="{{route('admin.gestore.update',$viewData['user']->getId())}}" method="post"></form>
+<form action="{{route('admin.gestore.update',$viewData['user']->getId())}}" method="post">
+
+
 @csrf
 @method('PUT')
 <div class="row">
@@ -62,4 +64,6 @@
             </div>
         </div>
     </div>
+</form>
+
 @endsection

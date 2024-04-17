@@ -26,7 +26,7 @@ Route::middleware("admin")->group(function(){
     Route::delete('/admin/archivio/{id}/delete','App\Http\Controllers\AdminArchivioController@delete')->name('admin.archivio.delete');
     Route::get('/admin/gestore/users','App\Http\Controllers\AdminGestoreController@index')->name('admin.gestore.users');
     Route::get('/admin/gestore/{id}/edit','App\Http\Controllers\AdminGestoreController@edit')->name('admin.gestore.edit');
-    Route::put('/admin/gestore/{id}/update','App\Http\Controllers\AdminGestoretController@update')->name('admin.gestore.update');
+    Route::put('/admin/gestore/{id}/update','App\Http\Controllers\AdminGestoreController@update')->name('admin.gestore.update');
 });
 
 //END ADMIN ROUTE

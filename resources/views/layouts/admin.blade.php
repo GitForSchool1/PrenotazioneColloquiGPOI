@@ -45,10 +45,7 @@
   <div class="copyright py-4 text-center text-white">
     <div class="container">
       <small>
-        Copyright - <a class="text-reset fw-bold text-decoration-none" target="_blank"
-          href="https://twitter.com/danielgarax">
-          Paolo Mullace
-        </a> - <b>Luca Salvagno</b>
+        Copyright - <b>Kevin Tunaru, Fabio Puzzo, Paolo Mullace, Simone Pallara, Alessandro Manassero, Roberto Stanciu</b>
       </small>
     </div>
   </div>

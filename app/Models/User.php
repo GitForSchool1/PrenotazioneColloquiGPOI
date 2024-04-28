@@ -51,7 +51,6 @@ class User extends Authenticatable
     public function getPassword(){ return $this->attributes['password']; }
     public function getRememberToken(){ return $this->attributes['remember_token']; }
     public function getCreatedAt(){ return $this->attributes['createdAt']; }
-    public function getBirthday(){ return $this->attributes['birthday']; }
     public function getRole(){ return $this->attributes['role']; }
 
     public function setId($id){ $this->attributes['id'] = $id;}
@@ -61,6 +60,5 @@ class User extends Authenticatable
     public function setPassword($password){ $this->attributes['password'] = $password;}
     public function setRememberToken($rememberToken){ $this->attributes['remember_token'] = $rememberToken;}
     public function setCreatedAt($createdAt){ $this->attributes['created_at'] = $createdAt;}
-    public function setBirthday($birthday){ $this->attributes['birthday'] = $birthday;}
     public function setRole($role){ $this->attributes['role'] = $role;}
 }

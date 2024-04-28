@@ -6,7 +6,7 @@
             Admin Report
         </div>
         <div class="card-body">
-            Qua dovrebbe starci il report... opzionale per il 6.... e per una la mia vita.... e per gesù 
+            <p>Ciao Mamma</p>
         </div>
     </div>
 

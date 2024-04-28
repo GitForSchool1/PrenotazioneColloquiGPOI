@@ -19,6 +19,7 @@ class AdminAuthMiddleware
         $user = Auth::user();
         if($user && $user->getRole() == 'admin'){
             return $next($request);
+            //Test
         }
         else{
             return redirect(route('home.index'));

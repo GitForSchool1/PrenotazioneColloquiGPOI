@@ -21,7 +21,6 @@ Route::get('/about','App\Http\Controllers\HomeController@about')->name("home.abo
 Route::middleware("admin")->group(function(){
 
     Route::get('/admin','App\Http\Controllers\AdminController@index')->name("admin.home.index");
-    Route::get('/admin/archivio','App\Http\Controllers\AdminArchivioController@store')->name('admin.archivio.store');
     Route::get('/admin/report','App\Http\Controllers\AdminReportController@show')->name('admin.report.show');
     Route::delete('/admin/archivio/{id}/delete','App\Http\Controllers\AdminArchivioController@delete')->name('admin.archivio.delete');
     Route::get('/admin/gestore/users','App\Http\Controllers\AdminGestoreController@index')->name('admin.gestore.users');

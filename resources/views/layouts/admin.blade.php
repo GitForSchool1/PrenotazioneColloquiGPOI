@@ -19,7 +19,6 @@
       </a>
       <hr/>
       <ul class="nav flex-column">
-        <li><a href={{route('admin.archivio.store')}} class="nav-link text-white">- Admin - Archivio</a></li>
         <li><a href="{{route('admin.report.show')}}" class="nav-link text-white">- Admin - Report</a></li>
         <li><a href="{{route('admin.gestore.users')}}" class="nav-link text-white">- Admin - View all users</a></li>
         

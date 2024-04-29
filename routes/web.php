@@ -27,6 +27,7 @@ Route::middleware("admin")->group(function(){
     Route::get('/admin/gestore/users','App\Http\Controllers\AdminGestoreController@index')->name('admin.gestore.users');
     Route::get('/admin/gestore/{id}/edit','App\Http\Controllers\AdminGestoreController@edit')->name('admin.gestore.edit');
     Route::put('/admin/gestore/{id}/update','App\Http\Controllers\AdminGestoreController@update')->name('admin.gestore.update');
+    
 });
 
 Route::middleware("professore")->group(function(){
@@ -42,3 +43,5 @@ Route::middleware("professore")->group(function(){
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home','App\Http\Controllers\HomeController@calendar')->name("home.calendar");
+

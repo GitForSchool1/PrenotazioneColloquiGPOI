@@ -20,7 +20,7 @@
         <div class="navbar-nav ms-auto">
           <a class="nav-link active" href="{{route('home.index')}}">Home</a>
           <a class="nav-link active" href="{{route('home.about')}}">About</a>
-          <a class="nav-link active" href="{{route('home.calendar')}}">Calendar</a>
+          <a class="nav-link active" href="{{route('calendar.index')}}">Calendar</a>
           
             @guest
             <a class="nav-link active" href="{{route('login')}}">Login</a>

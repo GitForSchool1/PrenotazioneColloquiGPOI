@@ -16,6 +16,13 @@ return new class extends Migration
         Schema::create('calendar', function (Blueprint $table) {
             $table->id();
             //$table->foreign('idProfessore')->references('id')->on('')
+            $table->string('NameProfessore');
+            $table->string('SurnameProfessore');
+            $table->string('Day');
+            $table->string('Metodologia');
+            $table->string('Aula');
+            $table->string('OrarioInizio');
+            $table->string('OrarioFine');
             $table->timestamps();
         });
     }

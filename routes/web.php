@@ -42,5 +42,6 @@ Route::middleware("professore")->group(function(){
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home','App\Http\Controllers\HomeController@calendar')->name("home.calendar");
+Route::get('/calendar','App\Http\Controllers\CalendarController@index')->name("calendar.index");
+Route::get('/calendar/{id}/prenota','App\Http\Controllers\CalendarController@prenota')->name('calendar.prenota');
 

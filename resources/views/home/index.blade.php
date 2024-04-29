@@ -12,11 +12,6 @@
             <a href="#" class="nav-link">Vai al tuo account</a> <!-- Bisogna mettere la Nuova route per andare all'account e fare la parte di front end -->
         </form>
         @else
-        <form method="post">
-            <a href="{{route("login")}}" class="nav-link">Hai già un account</a>
-            <a href="{{route("register")}}" class="nav-link">Crea un nuovo account</a>
-            
-        </form>
         @endif
     </div>
 

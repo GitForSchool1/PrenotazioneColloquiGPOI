@@ -18,11 +18,9 @@ class AdminAuthMiddleware
     {
         $user = Auth::user();
         if($user && $user->getRole() == 'admin'){
-            \DebugBar::enable();
             return $next($request);
         }
         else{
-            \DebugBar::disable();
             return redirect(route('home.index'));
         }
        

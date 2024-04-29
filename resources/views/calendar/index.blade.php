@@ -5,7 +5,7 @@
 
 <div class="card">
     <div class="card-header">
-        Prenotazione Colloqui
+        Elenco Docenti
     </div>
     <div class="card-body">
         <table class="table table-bordered table-striped">

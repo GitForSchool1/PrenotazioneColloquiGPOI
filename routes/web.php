@@ -45,4 +45,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/calendar','App\Http\Controllers\CalendarController@index')->name("calendar.index");
 Route::get('/calendar/{id}/prenota','App\Http\Controllers\CalendarController@prenota')->name('calendar.prenota');
 Route::post('/calendar/allPrenotazioni','App\Http\Controllers\CalendarController@showAll')->name("calendar.allPrenotazioni");
-
+Route::get('/account','App\Http\Controllers\AccountController@show')->name('account.show');

@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('Day');
             $table->string('Metodologia');
             $table->string('Aula');
+            $table->string('Prenotazione');
             $table->string('OrarioInizio');
             $table->string('OrarioFine');
             $table->timestamps();

@@ -25,8 +25,8 @@
             <a class="nav-link active" href="{{route('login')}}">Login</a>
             <a class="nav-link active" href="{{route('register')}}">Register</a>
             @else
-            <a class="nav-link active" href="{{route('calendar.index')}}">Calendar</a>
-
+              <a class="nav-link active" href="{{route('calendar.index')}}">Calendar</a>
+              <a class="nav-link active" href="{{route('account.show')}}">Account</a>
               <form method="POST" id="logout" action='{{route('logout')}}'>
                 <a class="nav-link active" role="button" onclick="document.getElementById('logout').submit()">Logout</a>
                 @csrf

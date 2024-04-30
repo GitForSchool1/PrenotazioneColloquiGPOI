@@ -9,6 +9,7 @@ class Calendario extends Model{
     public $table = 'Calendar';
 
     public function getId(){ return $this->attributes['id']; }
+    public function getPrenotazione(){ return $this->attributes['Prenotazione']; }
     public function getNameProfessore(){ return $this->attributes['NameProfessore']; }
     public function getSurnameProfessore(){ return $this->attributes['SurnameProfessore']; }
     public function getDay(){ return $this->attributes['Day']; } //campo per il giorno dei colloqui
@@ -19,6 +20,7 @@ class Calendario extends Model{
      
     
     public function setId(int $id){ $this->attributes['id'] = $id; }
+    public function setPrenotazione(int $Prenozione){ $this->attributes['Prenotazione'] = $Prenotazione; }
     public function setNameProfessore(string $nameProfessore){ $this->attributes['nameProfessore'] = $nameProfessore; }
     public function setSurnameProfessore(string $surnameProfessore){ $this->attributes['SurnameProfessore'] = $surnameProfessore; }
     public function setDay(string $Day){ $this->attributes['Day'] = $Day; }

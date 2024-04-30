@@ -7,7 +7,7 @@
         <label class="intro">Benvenuti all'interno della piattaforma per prenotare dei colloqui della scuola ITIS Mario Delpozzo</label>
     </div>
     <div class="row">
-        @if(Auth::user()&& Auth::user()->getRole()== "visitatore")
+        @if(Auth::user()&& Auth::user()->getRole()== "guest")
         <form method="post">
             <a href="#" class="nav-link">Vai al tuo account</a> <!-- Bisogna mettere la Nuova route per andare all'account e fare la parte di front end -->
         </form>

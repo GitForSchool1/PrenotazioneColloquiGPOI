@@ -2,11 +2,19 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Database\Factories\CalendarioFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Notifications\Notifiable;
+use Laravel\Sanctum\HasApiTokens;
 
 class Calendario extends Model{
+    use HasApiTokens, HasFactory, Notifiable;
     public $table = 'Calendar';
+    protected $cast = [
+        'OrarioInizio' => 'datetime',
+        'OrarioFine' => 'datetime'
+    ];
 
     public function getId(){ return $this->attributes['id']; }
     public function getPrenotazione(){ return $this->attributes['Prenotazione']; }

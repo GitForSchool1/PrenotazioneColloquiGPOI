@@ -22,9 +22,17 @@
             return view('calendar.index')->with('viewData',$viewData);
         }
         public function prenota($id){
-            $viewData =[];
-            return view ('calendar.prenota')->with('viewData',$viewData);
+            $viewData = [];
+            $user = Calendario::findOrFail($id);
+            $viewData['title'] = "Conferma Prenotazione Colloquio docente ".$user->getNameProfessore();
+            $viewData['subtitle'] = "";
+            $viewData['user'] = $user;
+    
+            return view('calendar.prenota')->with("viewData", $viewData);
         }
+        public function showAll(){
+            $viewData = [];
+            return view('calendar.allPrenotazioni')->with("viewData", $viewData);        }
 
     
     }

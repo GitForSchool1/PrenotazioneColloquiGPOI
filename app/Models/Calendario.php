@@ -17,7 +17,6 @@ class Calendario extends Model{
     public function getOrarioInizio(){ return $this->attributes['OrarioInizio']; }
     public function getOrarioFine(){ return $this->attributes['OrarioFine']; }
      
-    
     public function setId(int $id){ $this->attributes['id'] = $id; }
     public function setNameProfessore(string $nameProfessore){ $this->attributes['nameProfessore'] = $nameProfessore; }
     public function setSurnameProfessore(string $surnameProfessore){ $this->attributes['SurnameProfessore'] = $surnameProfessore; }

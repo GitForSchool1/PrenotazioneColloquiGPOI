@@ -6,9 +6,6 @@
     <div class="row">
         <label class="intro">Benvenuti all'interno della piattaforma per prenotare dei colloqui della scuola ITIS Mario Delpozzo</label>
     </div>
-<<<<<<< HEAD
-
-=======
     <div class="row">
         @if(Auth::user()&& Auth::user()->getRole()== "guest")
         <form method="post">
@@ -17,6 +14,5 @@
         @else
         @endif
     </div>
->>>>>>> c61cc774b7649c113848a9c7e3b5299021a06805
 
 @endsection

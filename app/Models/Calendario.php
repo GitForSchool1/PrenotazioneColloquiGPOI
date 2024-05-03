@@ -19,7 +19,7 @@ class Calendario extends Model{
     public function getOrarioFine(){ return $this->attributes['OrarioFine']; }
      
     public function setId(int $id){ $this->attributes['id'] = $id; }
-    public function setPrenotazione(int $Prenozione){ $this->attributes['Prenotazione'] = $Prenotazione; }
+    public function setPrenotazione(int $Prenotazione){ $this->attributes['Prenotazione'] = $Prenotazione; }
     public function setNameProfessore(string $nameProfessore){ $this->attributes['nameProfessore'] = $nameProfessore; }
     public function setSurnameProfessore(string $surnameProfessore){ $this->attributes['SurnameProfessore'] = $surnameProfessore; }
     public function setDay(string $Day){ $this->attributes['Day'] = $Day; }

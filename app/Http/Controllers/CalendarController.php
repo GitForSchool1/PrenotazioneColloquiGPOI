@@ -32,6 +32,8 @@
         }
         public function showAll(){
             $viewData = [];
+            $viewData['title'] = "Le tue prenotazioni";
+            $viewData['subtitle'] = "";
             return view('account.show')->with("viewData", $viewData);
         }
 

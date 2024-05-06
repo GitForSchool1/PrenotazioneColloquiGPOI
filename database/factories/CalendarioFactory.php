@@ -20,7 +20,7 @@ class CalendarioFactory extends Factory
             'NameProfessore' => $this->faker->name(),
             'SurnameProfessore' => $this->faker->name(),
             'day' => now(),
-            'Metodologia' => '', 
+            'Metodologia' => 'Online', 
             'Aula' => rand(1,100),
             'Prenotazione' => rand(1,100),
             'OrarioInizio' => now(),

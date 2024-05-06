@@ -35,6 +35,9 @@
             @if(Auth::user() && Auth::user()->getRole() == 'admin')
               <a class="nav-link active" href="{{route('admin.home.index')}}">Admin Panel</a>
             @endif
+            @if(Auth::user() && Auth::user()->getRole() == 'professore')
+              <a class="nav-link active" href="{{route('uploadOrario.index')}}">Upload Orario</a>
+            @endif
         </div>
       </div>
     </div>

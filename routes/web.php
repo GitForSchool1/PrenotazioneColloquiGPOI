@@ -28,16 +28,13 @@ Route::middleware("admin")->group(function(){
     Route::put('/admin/gestore/{id}/update','App\Http\Controllers\AdminGestoreController@update')->name('admin.gestore.update');
     
 });
+//END ADMIN ROUTE
 
 Route::middleware("professore")->group(function(){
-    /*
-        Upload per i file  -> post
-        Upload degli Orari -> post
-    */
+    Route::get('/uploadOrario','App\Http\Controllers\UploadOrarioController@index')->name("uploadOrario.index");
 });
 
 
-//END ADMIN ROUTE
 
 Auth::routes();
 

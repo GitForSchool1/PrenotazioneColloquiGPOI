@@ -32,7 +32,8 @@
         }
         public function showAll(){
             $viewData = [];
-            return view('calendar.allPrenotazioni')->with("viewData", $viewData);        }
+            return view('account.show')->with("viewData", $viewData);
+        }
 
     
     }

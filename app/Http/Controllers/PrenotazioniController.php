@@ -6,11 +6,12 @@ use Illuminate\Http\Request;
 
 class PrenotazioniController extends Controller
 {
-    public function addPrenotazioni(){
+    public function addPrenotazioni(Request $request){
         $viewData = [];
-        $viewData['title'] = "";
-        $viewData['subtitle'] = "";
-
+        $viewData['title'] = "Il mio account";
+        $viewData['subtitle'] = "Ecco le tue prenotazioni";
+        $viewData['prenotazioni'] = "";
         
+        return view('account.show')->with('viewData',$viewData);
     }
 }

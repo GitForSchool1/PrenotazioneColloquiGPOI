@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('prenotazione', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade'); // In questo modo creiamo una foreignKey e quando poi eliminiamo tutto si elimina a cascade
             $table->timestamps();
         });
     }

@@ -14,7 +14,7 @@ class CalendarioFactory extends Factory
      *
      * @return array<string, mixed>
      */
-    public function definition()
+        public function definition()
     {
         return [
             'NameProfessore' => $this->faker->name(),

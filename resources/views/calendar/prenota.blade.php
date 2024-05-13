@@ -7,53 +7,45 @@
 
 @csrf
 <div class="row">
-        
-        <div class="col">
-            <div class="mb-3 row">
-                <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Name:</label>
-                    <div class="col-lg-10 col-md-6 col-md-12">
-                        <input disabled value="{{$viewData['user']->getNameProfessore()}}" class="form-control">
-                    </div>
-                </label>
-            </div>
-        </div>
-        
-        <div class="row">
 
-        <div class="col">
-            <div class="mb-3 row">
-                <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Cognome:</label>
-                    <div class="col-lg-10 col-md-6 col-md-12">
-                        <input disabled value="{{$viewData['user']->getSurnameProfessore()}}" type="text" class="form-control">
-                    </div>
-                </label>
-            </div>
-        </div>
-    
-        <div class="col">
-            <div class="mb-3 row">
-                <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Day:</label>
-                    <div class="col-lg-10 col-md-6 col-md-12">
-                        <input name="role" value="{{$viewData['user']->getDay()}}" type="text" class="form-control">
-                    </div>
-                </label>
-            </div>
-        </div>
-
-        <div class="col">
-            <div class="mb-3 row">
-                <label class="col-lg-2 col-md-6 col-sm-12 col-form-label">Modalita:</label>
-                    <div class="col-lg-10 col-md-6 col-md-12">
-                        <input disabled value="{{$viewData['user']->getMetodologia()}}" type="text" class="form-control">
-                    </div>
-                </label>
-            </div>
-        </div>
+<div class="row">
+    <div class="col-md-auto">
+        <label>Name:</label>
     </div>
-    </div>
-
-
+    <div class="col-md-auto">
+        <input disabled value="{{$viewData['user']->getNameProfessore()}}" class="form-control">
+    </div>    
     
+    <div class="col-md-auto">
+        <label>Cognome Professore:</label>
+    </div>
+    <div class="col-md-auto">
+        <input disabled value="{{$viewData['user']->getSurnameProfessore()}}" type="text" class="form-control">
+    </div>
+    
+    
+    <div class="col-md-auto">
+        <label>Giorno</label>
+    </div>
+    <div class="col-md-auto">
+        <input name="role" value="{{$viewData['user']->getDay()}}" type="text" class="form-control">
+    </div>
+    
+    <div class="col-md-auto">
+        <label>Metodologia</label>
+    </div>
+    <div class="col-md-auto">
+        <select name="Metodologia" id="metodologia">
+            <option value="1">Online</option>
+            <option value="2">Presenza</option>
+        </select>
+    </div>
+    
+    
+</div>
+
+
+
     <div class="row">
         <div class="col">   
             <div class="mb-4 row">

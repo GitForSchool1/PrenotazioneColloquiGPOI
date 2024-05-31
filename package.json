@@ -19,6 +19,9 @@
         "sass": "^1.56.1"
     },
     "dependencies": {
+        "@fullcalendar/core": "^6.1.13",
+        "@fullcalendar/daygrid": "^6.1.13",
+        "@fullcalendar/interaction": "^6.1.13",
         "jquery": "^3.7.1"
     }
 }

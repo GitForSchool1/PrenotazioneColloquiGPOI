@@ -21,6 +21,12 @@
           <a class="nav-link active" href="{{route('home.index')}}">Home</a>
           <a class="nav-link active" href="{{route('home.about')}}">About</a>
           
+          @if(Auth::user() && Auth::user()->getRole() == 'admin')
+            <a class="nav-link active" href="{{route('admin.home.index')}}">Admin Panel</a>
+          @endif
+          @if(Auth::user() && Auth::user()->getRole() == 'professore' || Auth::user() && Auth::user()->getRole() == 'admin')
+            <a class="nav-link active" href="{{route('uploadOrario.index')}}">Upload Orario</a>
+          @endif
             @guest
             <a class="nav-link active" href="{{route('login')}}">Login</a>
             <a class="nav-link active" href="{{route('register')}}">Register</a>
@@ -32,12 +38,6 @@
                 @csrf
               </form>
             @endguest
-            @if(Auth::user() && Auth::user()->getRole() == 'admin')
-              <a class="nav-link active" href="{{route('admin.home.index')}}">Admin Panel</a>
-            @endif
-            @if(Auth::user() && Auth::user()->getRole() == 'professore' || Auth::user() && Auth::user()->getRole() == 'admin')
-              <a class="nav-link active" href="{{route('uploadOrario.index')}}">Upload Orario</a>
-            @endif
         </div>
       </div>
     </div>

@@ -1,0 +1,16 @@
+h1{
+    margin: 0px;
+    background-image: url('scuola.jpg');
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 140%;
+    font-weight: normal;
+    line-height: 800px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+option{
+    text-align: center;
+}

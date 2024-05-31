@@ -14,4 +14,13 @@ class PrenotazioniController extends Controller
         
         return view('account.show')->with('viewData',$viewData);
     }
+    public function testColloqui(){
+        $viewData = [];
+        $viewData['title'] = "Test";
+        $viewData['subtitle'] = "Test";
+        $viewData['prenotazioni'] = "";
+        
+        return view('workInProgressPages.creacolloquio')->with('viewData',$viewData);
+
+    }
 }
